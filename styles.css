@@ -41,4 +41,23 @@ aside {
   height: 100px;
   background-color: #ffffff;
   margin: 20px;
+  border: 2px solid #607D8B;
+  padding: 10px;
+}
+
+.web-title {
+  color: #455A64;
+  font-weight: 400;
+}
+
+.web-url {
+  color:
+}
+
+.read {
+  display: inline;
+}
+
+hr {
+  border: solid 1px #CFD8DC;
 }
