@@ -2,9 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="normalize.css" type="text/css" rel="stylesheet">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <title>Linked List</title>
   </head>
   <body>
+    <section>
+      <h1>Linked <img src="images/linked-list-logo.svg" alt="Linked List logo"> List</h1>
 
+
+      <form class="user-input">
+        <label for="title">
+          <input type="text" id="title" name="title" placeholder="Website Title">
+        </label>
+
+          <label for="url">
+            <input type="text" id="url" name="url" placeholder="Website URL">
+          </label>
+
+          <button class="submit">Enter</button>
+      </form>
+    </section>
+
+      <aside class="linked-list">
+        <div>
+          <h3 class="web-title"></h3>
+          <p class="web-url"></p>
+
+          <div class="button-container">
+            <p class="read">Read</p>
+            <p class="delete">Delete</p>
+          </div>
+        </div>
+      </aside>
   </body>
 </html>
