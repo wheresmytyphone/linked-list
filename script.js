@@ -2,8 +2,8 @@ $('.submit').on('click', function(event) {
   event.preventDefault();
   var $urlTitle = $('#title').val();
   var $url = $('#url').val();
-  var urlCard = new urlCard($urlTitle, $url);
-  addCard(urlCard);
+  var card = new urlCard($urlTitle, $url);
+  addCard(card);
 });
 
 function urlCard (title, url) {
@@ -13,8 +13,8 @@ function urlCard (title, url) {
 }
 
 
-function addCard(urlCard) {
-  var websiteTitle = urlCard.title;
-  var websiteUrl = urlCard.url
+function addCard(card) {
+  var websiteTitle = card.title;
+  var websiteUrl = card.url;
   $('aside').prepend('<div class="linked-card"><h3 class="web-title">${$websiteTitle}</h3><hr><p class="web-url">${$websiteUrl}</p><hr><div class="button-container"><p class="read">Read</p><p class="read">Delete</p></div></div>');
 }
