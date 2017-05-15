@@ -12,7 +12,7 @@ function urlCard (title, url) {
   console.log(this);
 }
 
-$('.linked-list').on('click', '.delete', function (e) {
+$('.linked-list').on('click', '.delete', function () {
   $(this).parent().remove();
 })
 
