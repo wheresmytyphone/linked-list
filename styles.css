@@ -76,14 +76,15 @@ aside {
   color: #455A64;
   font-size: 32px;
   font-weight: 400;
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 .web-url {
   color: #607D8B;
+  font-size: 20px
   text-decoration: underline;
   text-decoration-color: #F2F2F4;
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 .web-url:hover {
@@ -94,12 +95,10 @@ aside {
 .read {
   bottom: 0;
   color: #455A64;
-  display: inline;
-  left: 0;
-  margin: 10px;
-  position: absolute;
   text-decoration: underline;
   text-decoration-color: #F2F2F4;
+  position: absolute;
+  top: 140px;
 }
 
 .read:hover {
@@ -107,11 +106,12 @@ aside {
 }
 
 .delete {
-  left: auto;
   position: absolute;
   right: 0;
-
+  left: 360px;
 }
+
+
 
 hr {
   border: solid 1px #CFD8DC;
