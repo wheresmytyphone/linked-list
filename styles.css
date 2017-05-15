@@ -64,24 +64,42 @@ aside {
 
 .linked-card {
   width: 400px;
-  height: 100px;
+  height: 150px;
   background-color: #ffffff;
   margin: 20px;
   border: 2px solid #607D8B;
   padding: 10px;
+  position: relative;
 }
 
 .web-title {
   color: #455A64;
+  font-size: 32px;
   font-weight: 400;
+  margin: 10px;
 }
 
 .web-url {
-  color:
+  color: #607D8B;
+  text-decoration: underline;
+  text-decoration-color: #F2F2F4;
+  margin: 10px;
 }
 
 .read {
+  color: #455A64;
   display: inline;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-decoration: underline;
+  text-decoration-color: #F2F2F4;
+}
+
+.delete {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 hr {
