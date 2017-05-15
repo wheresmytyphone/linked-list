@@ -108,7 +108,10 @@ aside {
 .read {
   color: #F05A28;
   background-color: #F2F4F4;
-  text-decoration-color: #CFD8DC;
+}
+
+.url-line {
+
 }
 
 .delete {
