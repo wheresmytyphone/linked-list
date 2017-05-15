@@ -1,11 +1,11 @@
-
-
 $('.submit').on('click', function(event) {
   event.preventDefault();
   var $urlTitle = $('#title').val();
   var $url = $('#url').val();
   var card = new UrlCard($urlTitle, $url);
   addCard(card);
+  $('#title').val('');
+  $('#url').val('');
 });
 
 function toggleDisabled (value) {
