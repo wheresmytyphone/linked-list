@@ -1,4 +1,3 @@
-
 /*Function for adding card*/
 function UrlCard (title, url) {
   this.title = title;
@@ -19,7 +18,7 @@ $('.submit').on('click', function(event) {
 function addCard(card) {
   var websiteTitle = card.title;
   var websiteUrl = card.url;
-  $('aside').prepend('<div class="linked-card"><div><h3 class="web-title">' + websiteTitle +'</h3><hr><p class="web-url">' + websiteUrl + '</p><hr></div><p class="action unread">Read</p><p class="action delete">Delete</p></div>');
+  $('aside').prepend(`<div class="linked-card"><div><h3 class="web-title">${websiteTitle}</h3><hr><p class="web-url">${websiteUrl}</p><hr></div><p class="action unread">Read</p><p class="action delete">Delete</p></div>`);
 }
 
 /*Function for Enter button being disabled*/
