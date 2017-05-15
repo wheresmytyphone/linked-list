@@ -87,7 +87,13 @@ aside {
   margin: 10px 0px;
 }
 
-.read {
+.web-url:hover {
+  color: #455A64;
+  text-decoration-color: #FFC107;
+}
+
+.action {
+  bottom: 0;
   color: #455A64;
   text-decoration: underline;
   text-decoration-color: #F2F2F4;
@@ -95,12 +101,21 @@ aside {
   top: 140px;
 }
 
-.delete {
-  position: absolute;
-  left: 360px;
+.action:hover {
+  text-decoration-color: #FFC107;
 }
 
+.read {
+  color: #F05A28;
+  background-color: #F2F4F4;
+  text-decoration-color: #CFD8DC;
+}
 
+.delete {
+  position: absolute;
+  right: 0;
+  left: 360px;
+}
 
 hr {
   border: solid 1px #CFD8DC;

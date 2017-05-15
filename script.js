@@ -19,5 +19,11 @@ $('.linked-list').on('click', '.delete', function () {
 function addCard(card) {
   var websiteTitle = card.title;
   var websiteUrl = card.url;
-  $('aside').prepend('<div class="linked-card"><div><h3 class="web-title">' + websiteTitle +'</h3><hr><p class="web-url">' + websiteUrl + '</p><hr></div><p class="read">Read</p><p class="read delete">Delete</p></div>');
+  $('aside').prepend('<div class="linked-card"><div><h3 class="web-title">' + websiteTitle +'</h3><hr><p class="web-url">' + websiteUrl + '</p><hr></div><p class="action unread">Read</p><p class="action delete">Delete</p></div>');
 }
+
+$('.linked-list').on('click', ".unread", function() {
+  $(this).parent().toggleClass('read');
+  $(this).toggleClass('read');
+  $('.web-url').toggleClass('read');
+})
