@@ -81,7 +81,7 @@ aside {
 
 .web-url {
   color: #607D8B;
-  font-size: 20px
+  font-size: 20px;
   text-decoration: underline;
   text-decoration-color: #F2F2F4;
   margin: 10px 0px;
@@ -92,7 +92,7 @@ aside {
   text-decoration-color: #FFC107;
 }
 
-.read {
+.action {
   bottom: 0;
   color: #455A64;
   text-decoration: underline;
@@ -101,8 +101,14 @@ aside {
   top: 140px;
 }
 
-.read:hover {
+.action:hover {
   text-decoration-color: #FFC107;
+}
+
+.read {
+  color: #F05A28;
+  background-color: #F2F4F4;
+  text-decoration-color: #CFD8DC;
 }
 
 .delete {
@@ -110,8 +116,6 @@ aside {
   right: 0;
   left: 360px;
 }
-
-
 
 hr {
   border: solid 1px #CFD8DC;
