@@ -86,20 +86,31 @@ aside {
   margin: 10px;
 }
 
+.web-url:hover {
+  color: #455A64;
+  text-decoration-color: #FFC107;
+}
+
 .read {
+  bottom: 0;
   color: #455A64;
   display: inline;
-  position: absolute;
-  bottom: 0;
   left: 0;
+  margin: 10px;
+  position: absolute;
   text-decoration: underline;
   text-decoration-color: #F2F2F4;
 }
 
+.read:hover {
+  text-decoration-color: #FFC107;
+}
+
 .delete {
+  left: auto;
   position: absolute;
-  bottom: 0;
   right: 0;
+
 }
 
 hr {
