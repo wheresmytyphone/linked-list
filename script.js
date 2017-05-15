@@ -16,5 +16,10 @@ function urlCard (title, url) {
 function addCard(card) {
   var websiteTitle = card.title;
   var websiteUrl = card.url;
-  $('aside').prepend('<div class="linked-card"><h3 class="web-title">' + websiteTitle + '</h3><hr><p class="web-url">' + websiteUrl + '</p><hr><div class="button-container"><p class="read">Read</p><p class="read">Delete</p></div></div>');
+  $('aside').prepend('<div class="linked-card"><div><h3 class="web-title">' + websiteTitle +'</h3><hr><p class="web-url">' + websiteUrl + '</p><hr></div><p class="read">Read</p><p class="read delete">Delete</p></div>');
 }
+
+$('.linked-card').on('click', '.delete', function (e) {
+  e.preventDefault();
+  $(this).parent().remove();
+})
