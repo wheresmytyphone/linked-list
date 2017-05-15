@@ -1,10 +1,29 @@
+
+
 $('.submit').on('click', function(event) {
   event.preventDefault();
   var $urlTitle = $('#title').val();
   var $url = $('#url').val();
-  var card = new urlCard($urlTitle, $url);
+  var card = new UrlCard($urlTitle, $url);
   addCard(card);
 });
+
+function toggleDisabled (value) {
+  $('.submit').prop("disabled", value)
+}
+
+function readyToEnter () {
+  var $urlTitle = $('#title').val();
+  var $url = $('#url').val();
+  if ($urlTitle === "" || $url === "") {
+    toggleDisabled(true);
+    console.log("Hello");
+  }  else {
+    toggleDisabled(false);
+    console.log('Goodbye');
+  }
+}
+
 
 function UrlCard (title, url) {
   this.title = title;
@@ -25,5 +44,6 @@ function addCard(card) {
 $('.linked-list').on('click', ".unread", function() {
   $(this).parent().toggleClass('read');
   $(this).toggleClass('read');
-  $(this).find('.web-url').toggleClass('url-line');
+  $(this).parent().find('.web-url').toggleClass('url-line');
+  $(this).parent().find('.delete').toggleClass('url-line');
 })
