@@ -6,7 +6,7 @@ $('.submit').on('click', function(event) {
   addCard(card);
 });
 
-function urlCard (title, url) {
+function UrlCard (title, url) {
   this.title = title;
   this.url = url;
   console.log(this);
@@ -25,5 +25,5 @@ function addCard(card) {
 $('.linked-list').on('click', ".unread", function() {
   $(this).parent().toggleClass('read');
   $(this).toggleClass('read');
-  $('.web-url').toggleClass('read');
+  $(this).find('.web-url').toggleClass('url-line');
 })
