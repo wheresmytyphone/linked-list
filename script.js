@@ -26,14 +26,16 @@ function toggleDisabled (value) {
 function readyToEnter () {
   var $urlTitle = $('#title').val();
   var $url = $('#url').val();
+  var card = new UrlCard($urlTitle, $url);
   if ($urlTitle === "" || $url === "") {
     toggleDisabled(true);
+    $('.user-feedback').text('Please fill out both inputs')
   } else {
       toggleDisabled(false);
-      var card = new UrlCard($urlTitle, $url);
       addCard(card);
       $('#title').val('');
       $('#url').val('');
+      $('.user-feedback').text('')
   }
 }
 
