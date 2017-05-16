@@ -33,6 +33,11 @@ h1 {
   padding-top: 30vh;
 }
 
+.user-feedback {
+  color: white;
+  font-size: 24px;
+}
+
 #title, #url {
   border: 2px solid #BDBFC1;
   display: block;
