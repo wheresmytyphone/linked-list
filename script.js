@@ -29,11 +29,13 @@ function readyToEnter () {
   var card = new UrlCard($urlTitle, $url);
   if ($urlTitle === "" || $url === "") {
     toggleDisabled(true);
+    $('.user-feedback').text('Please fill out both inputs')
   } else {
       toggleDisabled(false);
       addCard(card);
       $('#title').val('');
       $('#url').val('');
+      $('.user-feedback').text('')
   }
 }
 
