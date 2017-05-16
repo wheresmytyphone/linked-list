@@ -23,6 +23,19 @@ main {
 }
 
 /* Left side */
+section.number-of-links {
+  color: white;
+  position: absolute;
+  right: 50%;
+  text-align: none;
+  width: 200px;
+}
+
+.num-links, .num-read {
+  display: inline;
+}
+
+
 h1 {
   color: #FFF;
   font-size: 78px;
@@ -112,6 +125,9 @@ aside {
 
 .read {
   color: #F05A28;
+}
+
+.read-background {
   background-color: #F2F4F4;
 }
 
@@ -168,7 +184,7 @@ h1{
 
   aside {
     float: none;
-    width: 100%;  
+    width: 100%;
   }
 
 }

@@ -10,11 +10,8 @@ $('.submit').on('click', function(event) {
   event.preventDefault();
   var $urlTitle = $('#title').val();
   var $url = $('#url').val();
-  var numCards = $('.linked-card').length;
-  var numRead = $('.read').length
+  var numCards = $('.linked-card').length + 1;
   console.log(numCards)
-  console.log(numRead)
-
   readyToEnter();
 });
 
@@ -51,8 +48,10 @@ $('input').focus(function () {
 
 /*Select or deselect read*/
 $('.linked-list').on('click', ".unread", function() {
-  $(this).parent().toggleClass('read');
+  $(this).parent().toggleClass('read-background');
   $(this).toggleClass('read');
+  var numRead = $('.read').length;
+  console.log(numRead)
   $(this).parent().find('.web-url, .delete').toggleClass('url-line');
 })
 
