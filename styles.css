@@ -19,7 +19,7 @@ main {
 }
 
 .logo {
-  height: 62px;
+  height: 50px;
 }
 
 /* Left side */
@@ -62,7 +62,7 @@ aside {
   background-color: #CFD8DC;
   height: 100vh;
   float: left;
-  overflow: scroll;
+  overflow-y: scroll;
   width: 50%;
 }
 
@@ -129,7 +129,19 @@ hr {
   border: solid 1px #CFD8DC;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
+
+h1{
+  font-size: 45px;
+}
+
+.logo {
+  height: 35px;
+}
+
+}
+
+@media (max-width: 775px) {
 
 main {
   text-align: center;
@@ -152,5 +164,8 @@ h1 {
 
 aside {
   float: none;
+  width: 100%;
+  overflow: hidden;
+
 }
 }
