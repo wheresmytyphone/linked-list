@@ -11,8 +11,8 @@ $('.submit').on('click', function(event) {
   var $urlTitle = $('#title').val();
   var $url = $('#url').val();
   var numCards = $('.linked-card').length + 1;
-  $('.num-links').text("Links: " + numCards);
   readyToEnter();
+  $('.num-links').text("Links: " + numCards);
 });
 
 function addCard(card) {
@@ -33,12 +33,13 @@ function readyToEnter () {
   if ($urlTitle === "" || $url === "") {
     toggleDisabled(true);
     $('.user-feedback').text('Please fill out both inputs')
+    $('.num-links').text("Links: " + (numCards - 1));
   } else {
       toggleDisabled(false);
       addCard(card);
       $('#title').val('');
       $('#url').val('');
-      $('.user-feedback').text('')
+      $('.user-feedback').text('');
   }
 }
 
