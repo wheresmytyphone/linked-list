@@ -60,6 +60,7 @@ $('.linked-list').on('click', '.delete', function () {
   $(this).parent().remove();
 })
 
-$('aside').on('click', '.clearRead', function() {
+$('.clear-read').on('click', function(e) {
+  e.preventDefault();
   $('.read').parent().remove()
 })

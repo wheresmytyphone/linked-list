@@ -67,8 +67,19 @@ h1 {
   cursor: pointer;
 }
 
-.submit:hover {
+.submit:hover, .clear-read:hover {
   background-color: #FFD773;
+
+}
+
+.clear-read {
+  background-color: #D19E06;
+  border-radius: 30px;
+  border-width: 0px;
+  color: #FFF;
+  height: 46px;
+  width: 40%;
+  cursor: pointer;
 }
 
 aside {
