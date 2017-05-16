@@ -1,3 +1,4 @@
+
 /*Function for adding card*/
 function UrlCard (title, url) {
   this.title = title;
@@ -9,6 +10,11 @@ $('.submit').on('click', function(event) {
   event.preventDefault();
   var $urlTitle = $('#title').val();
   var $url = $('#url').val();
+  var numCards = $('.linked-card').length;
+  var numRead = $('.read').length
+  console.log(numCards)
+  console.log(numRead)
+
   readyToEnter();
 });
 

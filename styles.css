@@ -62,7 +62,7 @@ aside {
   background-color: #CFD8DC;
   height: 100vh;
   float: left;
-  overflow-y: scroll;
+  overflow-y  : scroll;
   width: 50%;
 }
 
@@ -143,29 +143,32 @@ h1{
 
 @media (max-width: 775px) {
 
-main {
-  text-align: center;
-  height: 45vh;
-  width: 100%;
-}
+  body {
+    overflow: hidden;
+  }
 
-h1 {
-  padding-top: 0;
-  font-size: 35px;
-}
+  main {
+    text-align: center;
+    height: 45vh;
+    width: 100%;
+  }
 
-.logo {
-  height: 25px;
-}
+  h1 {
+    padding-top: 0;
+    font-size: 35px;
+  }
 
-#title, #url, .submit {
-  width: 75%;
-}
+  .logo {
+    height: 25px;
+  }
 
-aside {
-  float: none;
-  width: 100%;
-  overflow: hidden;
+  #title, #url, .submit {
+    width: 75%;
+  }
 
-}
+  aside {
+    float: none;
+    width: 100%;  
+  }
+
 }
