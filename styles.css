@@ -47,14 +47,12 @@ h1 {
   color: #FFF;
   height: 36px;
   width: 507px;
+  cursor: pointer;
 }
 
 .submit:hover {
   background-color: #FFD773;
 }
-
-
-/* Aside */
 
 aside {
   background-color: #CFD8DC;
@@ -99,6 +97,7 @@ aside {
   text-decoration-color: #F2F2F4;
   position: absolute;
   top: 140px;
+  cursor: pointer;
 }
 
 .action:hover {
