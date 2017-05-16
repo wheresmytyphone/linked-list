@@ -10,6 +10,7 @@ $('.submit').on('click', function(event) {
   var $urlTitle = $('#title').val();
   var $url = $('#url').val();
   var card = new UrlCard($urlTitle, $url);
+  readyToEnter();
   addCard(card);
   $('#title').val('');
   $('#url').val('');
@@ -23,7 +24,7 @@ function addCard(card) {
 
 /*Function for Enter button being disabled*/
 function toggleDisabled (value) {
-  $('.submit').prop("disabled", value)
+  $('.submit').attr("disabled", value)
 }
 
 function readyToEnter () {
