@@ -11,7 +11,7 @@ $('.submit').on('click', function(event) {
   var $urlTitle = $('#title').val();
   var $url = $('#url').val();
   var numCards = $('.linked-card').length + 1;
-  console.log(numCards)
+  $('.num-links').text("Links: " + numCards);
   readyToEnter();
 });
 
@@ -51,7 +51,7 @@ $('.linked-list').on('click', ".unread", function() {
   $(this).parent().toggleClass('read-background');
   $(this).toggleClass('read');
   var numRead = $('.read').length;
-  console.log(numRead)
+  $('.num-read').text("Links read " + numRead);
   $(this).parent().find('.web-url, .delete').toggleClass('url-line');
 })
 

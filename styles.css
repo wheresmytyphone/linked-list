@@ -25,14 +25,16 @@ main {
 /* Left side */
 section.number-of-links {
   color: white;
+  font-size: 24px;
   position: absolute;
   right: 50%;
   text-align: none;
-  width: 200px;
+  width: 300px;
 }
 
 .num-links, .num-read {
   display: inline;
+  padding: 10px;
 }
 
 
@@ -169,8 +171,13 @@ h1{
     width: 100%;
   }
 
+  section.number-of-links {
+    font-size: 16px;
+    right: 0;
+  }
+
   h1 {
-    padding-top: 0;
+    padding-top: 20px;
     font-size: 35px;
   }
 
