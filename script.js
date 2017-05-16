@@ -9,11 +9,7 @@ $('.submit').on('click', function(event) {
   event.preventDefault();
   var $urlTitle = $('#title').val();
   var $url = $('#url').val();
-  var card = new UrlCard($urlTitle, $url);
   readyToEnter();
-  addCard(card);
-  $('#title').val('');
-  $('#url').val('');
 });
 
 function addCard(card) {
@@ -32,10 +28,12 @@ function readyToEnter () {
   var $url = $('#url').val();
   if ($urlTitle === "" || $url === "") {
     toggleDisabled(true);
-    console.log("Hello");
-  }  else {
-    toggleDisabled(false);
-    console.log('Goodbye');
+  } else {
+      toggleDisabled(false);
+      var card = new UrlCard($urlTitle, $url);
+      addCard(card);
+      $('#title').val('');
+      $('#url').val('');
   }
 }
 
@@ -47,8 +45,7 @@ $('input').focus(function () {
 $('.linked-list').on('click', ".unread", function() {
   $(this).parent().toggleClass('read');
   $(this).toggleClass('read');
-  $(this).parent().find('.web-url').toggleClass('url-line');
-  $(this).parent().find('.delete').toggleClass('url-line');
+  $(this).parent().find('.web-url, .delete').toggleClass('url-line');
 })
 
 /*Delete*/
