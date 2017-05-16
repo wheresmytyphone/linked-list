@@ -12,25 +12,22 @@ body {
 
 main {
   background-color: #455A64;
+  float: left;
+  height: 100vh;
   text-align: center;
+  width: 50%;
 }
 
 .logo {
-  height: 50px;
-}
-
-main {
-  float: left;
-  width: 600px;
-  height: 100vh;
+  height: 62px;
 }
 
 /* Left side */
 h1 {
   color: #FFF;
-  font-size: 60px;
+  font-size: 78px;
   font-weight: 800;
-  padding-top: 30vh;
+  padding-top: 25vh;
 }
 
 .user-feedback {
@@ -41,17 +38,18 @@ h1 {
 #title, #url {
   border: 2px solid #BDBFC1;
   display: block;
-  height: 30px;
+  font-size: 24px;
+  height: 40px;
   margin: 30px auto;
-  width: 500px;
+  width: 80%;
 }
 
 .submit {
   background-color: #FFC107;
   border: none;
   color: #FFF;
-  height: 36px;
-  width: 507px;
+  height: 46px;
+  width: 81%;
   cursor: pointer;
 }
 
@@ -63,13 +61,15 @@ aside {
   background-color: #CFD8DC;
   height: 100vh;
   float: left;
+  overflow: scroll;
+  width: 50%;
 }
 
 .linked-card {
-  width: 400px;
+  width: 85%;
   height: 150px;
   background-color: #ffffff;
-  margin: 20px;
+  margin: 20px auto;
   border: 2px solid #607D8B;
   padding: 10px;
   position: relative;
@@ -98,9 +98,9 @@ aside {
 .action {
   bottom: 0;
   color: #455A64;
+  position: absolute;
   text-decoration: underline;
   text-decoration-color: #F2F2F4;
-  position: absolute;
   top: 140px;
   cursor: pointer;
 }
@@ -114,14 +114,14 @@ aside {
   background-color: #F2F4F4;
 }
 
-.url-line {
-  text-decoration-color: #CFD8DC;
-}
-
 .delete {
   position: absolute;
-  right: 0;
-  left: 360px;
+  right: 10px;
+  left: auto;
+}
+
+.url-line {
+  text-decoration-color: #CFD8DC;
 }
 
 hr {
