@@ -23,6 +23,7 @@ main {
   float: left;
   width: 600px;
   height: 100vh;
+  display: inline-block;
 }
 
 /* Left side */
@@ -129,7 +130,9 @@ hr {
   border: solid 1px #CFD8DC;
 }
 
-/*main {
+@media (max-width: 600px) {
+
+main {
   text-align: center;
   height: 45vh;
   width: 100%;
@@ -150,4 +153,5 @@ h1 {
 
 aside {
   float: none;
-}*/
+}
+}
