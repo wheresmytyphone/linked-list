@@ -11,7 +11,6 @@ $('.submit').on('click', function(event) {
   var $urlTitle = $('#title').val();
   var $url = $('#url').val();
   var numCards = $('.linked-card').length;
-  var numRead = $('.read').length
   console.log(numCards)
   console.log(numRead)
 
@@ -59,4 +58,8 @@ $('.linked-list').on('click', ".unread", function() {
 /*Delete*/
 $('.linked-list').on('click', '.delete', function () {
   $(this).parent().remove();
+})
+
+$('aside').on('click', '.clearRead', function() {
+  $('.read').parent().remove()
 })
