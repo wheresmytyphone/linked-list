@@ -39,6 +39,10 @@ function readyToEnter () {
   }
 }
 
+$('input').focus(function () {
+  toggleDisabled(false);
+})
+
 /*Select or deselect read*/
 $('.linked-list').on('click', ".unread", function() {
   $(this).parent().toggleClass('read');
