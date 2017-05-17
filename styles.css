@@ -23,8 +23,8 @@ main {
 }
 
 /* Left side */
-section.num ber-of-links {
-  color: white;
+section.number-of-links {
+  color: #FFF;
   font-size: 24px;
   position: absolute;
   right: 50%;
@@ -36,7 +36,6 @@ section.num ber-of-links {
   display: inline;
   padding: 10px;
 }
-
 
 h1 {
   color: #FFF;
@@ -115,6 +114,7 @@ aside {
 
 .web-url {
   color: #607D8B;
+  display: inline-block;
   font-size: 20px;
   text-decoration: underline;
   text-decoration-color: #F2F2F4;

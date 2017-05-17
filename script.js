@@ -16,7 +16,7 @@ function UrlCard (title, url) {
 function addCard(card) {
   var websiteTitle = card.title;
   var websiteUrl = card.url;
-  $('aside').prepend(`<div class="linked-card"><div><h3 class="web-title">${websiteTitle}</h3><hr><a href="${websiteUrl}" class="web-url">${websiteUrl}</p><hr></div><p class="action unread">Read</p><p class="action delete">Delete</p></div>`);
+  $('aside').prepend(`<div class="linked-card"><div><h3 class="web-title">${websiteTitle}</h3><hr><a href="${websiteUrl}" class="web-url" target="blank_">${websiteUrl}</a><hr></div><p class="action unread">Read</p><p class="action delete">Delete</p></div>`);
 }
 
 /*Function for Enter button being disabled*/
@@ -73,7 +73,7 @@ $('.clear-read').on('click', function(e) {
   counter();
 })
 
-/* Validate url */
+/* Change www to https://wwww. */
 
 $('#url').on('input', function() {
 	var input=$(this);
