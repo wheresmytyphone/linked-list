@@ -182,7 +182,7 @@ h1{
 @media (max-width: 775px) {
 
   body {
-    overflow-y: hidden;
+    overflow-y: unset;
   }
 
   main {
@@ -215,10 +215,11 @@ h1{
   }
 
   aside {
-    float: none;
+    /*float: none;*/
     height: 40vh;
     width: 100%;
     padding-bottom: 20px;
+    overflow-y: unset;
   }
 
   .clear-read {
@@ -232,6 +233,10 @@ h1{
 @media (max-width:350px) {
   main {
     height: 50vh;
+    overflow-y: scroll;
+  }
+
+  aside {
   }
 
   .user-feedback {
