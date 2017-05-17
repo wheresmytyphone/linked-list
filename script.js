@@ -57,7 +57,7 @@ $('.linked-list').on('click', ".unread", function() {
   $(this).parent().toggleClass('read-background');
   $(this).toggleClass('read');
   var numRead = $('.read').length;
-  $('.num-read').text("Links read " + numRead);
+  $('.num-read').text("Links read: " + numRead);
   $(this).parent().find('.web-url, .delete').toggleClass('url-line');
 })
 
