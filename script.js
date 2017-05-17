@@ -1,11 +1,4 @@
-
 /*Function for adding card*/
-function UrlCard (title, url) {
-  this.title = title;
-  this.url = url;
-  console.log(this);
-}
-
 $('.submit').on('click', function(event) {
   event.preventDefault();
   var $urlTitle = $('#title').val();
@@ -13,6 +6,12 @@ $('.submit').on('click', function(event) {
   readyToEnter();
   counter();
 });
+
+function UrlCard (title, url) {
+  this.title = title;
+  this.url = url;
+  console.log(this);
+}
 
 function addCard(card) {
   var websiteTitle = card.title;
@@ -31,7 +30,6 @@ function readyToEnter () {
   var card = new UrlCard($urlTitle, $url);
   if ($urlTitle === "" || $url === "") {
     toggleDisabled(true);
-    counter();
     $('.user-feedback').text('Please fill out both inputs!')
   } else {
       toggleDisabled(false);
@@ -74,3 +72,14 @@ $('.clear-read').on('click', function(e) {
   $('.read').parent().remove();
   counter();
 })
+
+/* Validate url */
+
+$('#url').on('input', function() {
+	var input=$(this);
+	if (input.val().substring(0,4)=='www.'){input.val('http://www.'+input.val().substring(4));}
+	var re = /(http|ftp|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&:\/~+#-]*[\w@?^=%&\/~+#-])?/;
+	var is_url=re.test(input.val());
+	if(is_url){input.removeClass("invalid").addClass("valid");}
+	else{input.removeClass("valid").addClass("invalid");}
+});
