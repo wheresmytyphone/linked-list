@@ -76,13 +76,12 @@ h1 {
 
 .clear-read {
   background-color: #D19E06;
-  border-radius: 30px;
-  border-width: 0px;
+  border: none;
   color: #FFF;
   cursor: pointer;
   height: 46px;
   margin: 30px;
-  width: 40%;
+  width: 81%;
 }
 
 aside {
@@ -169,6 +168,11 @@ h1{
   height: 35px;
 }
 
+.user-feedback {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
 }
 
 @media (max-width: 775px) {
@@ -179,7 +183,7 @@ h1{
 
   main {
     text-align: center;
-    height: 45vh;
+    height: 60vh;
     width: 100%;
   }
 
@@ -193,6 +197,11 @@ h1{
     font-size: 35px;
   }
 
+  .user-feedback {
+    padding-top: 30px;
+    font-size: 16px;
+  }
+
   .logo {
     height: 25px;
   }
@@ -203,6 +212,7 @@ h1{
 
   aside {
     float: none;
+    height: 40vh;
     width: 100%;
   }
 
