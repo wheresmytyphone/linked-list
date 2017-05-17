@@ -32,12 +32,13 @@ function readyToEnter () {
   if ($urlTitle === "" || $url === "") {
     toggleDisabled(true);
     counter();
+    $('.user-feedback').text('Please fill out both inputs!')
   } else {
       toggleDisabled(false);
       addCard(card);
       $('#title').val('');
       $('#url').val('');
-      $('.user-feedback').text('');
+      $('.user-feedback').text('Add a bookmark!');
   }
 }
 
@@ -50,7 +51,7 @@ function counter() {
   var numCards = $('.linked-card').length;
   var numRead = $('.read').length;
   $('.num-links').text("Links: " + numCards);
-  $('.num-read').text("Links read " + numRead);
+  $('.num-read').text("Links read: " + numRead);
 }
 
 /*Select or deselect read*/

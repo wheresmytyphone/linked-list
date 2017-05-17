@@ -42,13 +42,13 @@ h1 {
   color: #FFF;
   font-size: 78px;
   font-weight: 800;
-  padding-top: 25vh;
+  padding-top: 15vh;
 }
 
 .user-feedback {
   color: white;
   font-size: 24px;
-  margin-top: 30px;
+  margin-top: -30px;
 }
 
 #title, #url {
@@ -79,9 +79,10 @@ h1 {
   border-radius: 30px;
   border-width: 0px;
   color: #FFF;
-  height: 46px;
-  width: 40%;
   cursor: pointer;
+  height: 46px;
+  margin: 30px;
+  width: 40%;
 }
 
 aside {
