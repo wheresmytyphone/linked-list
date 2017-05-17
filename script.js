@@ -10,9 +10,8 @@ $('.submit').on('click', function(event) {
   event.preventDefault();
   var $urlTitle = $('#title').val();
   var $url = $('#url').val();
-  var numCards = $('.linked-card').length + 1;
   readyToEnter();
-  $('.num-links').text("Links: " + numCards);
+  counter();
 });
 
 function addCard(card) {
@@ -32,8 +31,7 @@ function readyToEnter () {
   var card = new UrlCard($urlTitle, $url);
   if ($urlTitle === "" || $url === "") {
     toggleDisabled(true);
-    $('.user-feedback').text('Please fill out both inputs')
-    $('.num-links').text("Links: " + (numCards - 1));
+    counter();
   } else {
       toggleDisabled(false);
       addCard(card);
@@ -47,6 +45,14 @@ $('input').focus(function () {
   toggleDisabled(false);
 })
 
+/* Function for Counter */
+function counter() {
+  var numCards = $('.linked-card').length;
+  var numRead = $('.read').length;
+  $('.num-links').text("Links: " + numCards);
+  $('.num-read').text("Links read " + numRead);
+}
+
 /*Select or deselect read*/
 $('.linked-list').on('click', ".unread", function() {
   $(this).parent().toggleClass('read-background');
@@ -59,9 +65,11 @@ $('.linked-list').on('click', ".unread", function() {
 /*Delete*/
 $('.linked-list').on('click', '.delete', function () {
   $(this).parent().remove();
+  counter();
 })
 
 $('.clear-read').on('click', function(e) {
   e.preventDefault();
-  $('.read').parent().remove()
+  $('.read').parent().remove();
+  counter();
 })
