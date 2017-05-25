@@ -180,19 +180,19 @@ hr {
 
 @media (max-width: 1200px) {
 
-h1{
-  font-size: 45px;
-}
+  h1{
+    font-size: 45px;
+  }
 
-.logo {
-  height: 35px;
-}
+  .logo {
+    height: 35px;
+  }
 
-.user-feedback {
-  font-size: 20px;
-  padding-top: 30px;
-}
-}
+  .user-feedback {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  }
 
 @media (max-width: 775px) {
 
@@ -245,6 +245,7 @@ h1{
   }
 
 @media (max-width:350px) {
+
   main {
     height: 50vh;
     overflow-y: scroll;

@@ -48,17 +48,16 @@ $('input').focus(function () {
 function counter() {
   var numCards = $('.linked-card').length;
   var numRead = $('.read').length;
-  $('.num-links').text("Links: " + numCards);
-  $('.num-read').text("Links read: " + numRead);
+  $('.num-links span').text(numCards);
+  $('.num-read span').text( numRead);
 }
 
 /*Select or deselect read*/
 $('.linked-list').on('click', ".unread", function() {
   $(this).parent().toggleClass('read-background');
   $(this).toggleClass('read');
-  var numRead = $('.read').length;
-  $('.num-read').text("Links read: " + numRead);
   $(this).parent().find('.web-url, .delete').toggleClass('url-line');
+  counter();
 })
 
 /*Delete*/
